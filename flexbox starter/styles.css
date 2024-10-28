@@ -10,7 +10,8 @@ html {
 }
 .box {
     text-align: center;
-    /* margin:25px; */
+     /* margin:25px;  */
+     flex-grow: 1;
 
 }
 
@@ -35,8 +36,12 @@ html {
 
 .box5 {
     background: #f1c40f;
-    
-    
+    /* order: 1; */
+    /* flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 200px; */
+    /* grow shrink basis */
+    flex-direction: 1 2 200px;
 }
 
 
@@ -48,7 +53,12 @@ html {
 .menu {
     
     background-color: grey;
-    
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: center; */
+    /* align-items: stretch; */
+   height: 400px;
+    /*align-content: center;*/
 }
 
 p {
